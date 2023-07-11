@@ -1,0 +1,75 @@
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.input {
+	margin: 5px;
+	width: 300px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	background: #f6f6f6;
+	border-radius: 8px;
+}
+
+.button-sum {
+	text-align: center;
+	width: 150px;
+	margin: 5px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+	background-color: aquamarine;
+}
+
+.button-minus {
+	text-align: center;
+	width: 150px;
+	margin: 5px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+	background-color: rgb(231, 46, 46);
+}
+
+.buttons {
+	display: inline-block;
+}
+
+.button-result {
+	margin: 5px;
+	width: 150px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+}
+
+.button-clear {
+	margin: 5px;
+	width: 150px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+}
+
+.result {
+	border: 1px solid #cecece;
+	border-radius: 8px;
+	background-color: aliceblue;
+	text-align: center;
+	width: 300px;
+	color: black;
+	margin-top: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
