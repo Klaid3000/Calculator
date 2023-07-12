@@ -1,8 +1,8 @@
-.App {
+.app {
 	text-align: center;
 }
 
-.App-header {
+.appHeader {
 	background-color: #282c34;
 	min-height: 100vh;
 	display: flex;
@@ -22,7 +22,7 @@
 	border-radius: 8px;
 }
 
-.button-plus {
+.buttonPlus {
 	text-align: center;
 	width: 150px;
 	margin: 5px;
@@ -32,7 +32,7 @@
 	background-color: aquamarine;
 }
 
-.button-minus {
+.buttonMinus {
 	text-align: center;
 	width: 150px;
 	margin: 5px;
@@ -42,24 +42,32 @@
 	background-color: rgb(231, 46, 46);
 }
 
+.intButton {
+	width: 31px;
+	border: 1px solid #cecece;
+	border-radius: 5px;
+}
+
 .buttons {
 	display: inline-block;
 }
 
-.button-result {
+.buttonResult {
 	margin: 5px;
 	width: 150px;
 	padding: 6px 0 4px 10px;
 	border: 1px solid #cecece;
 	border-radius: 8px;
+	background-color: bisque;
 }
 
-.button-clear {
+.buttonClear {
 	margin: 5px;
 	width: 150px;
 	padding: 6px 0 4px 10px;
 	border: 1px solid #cecece;
 	border-radius: 8px;
+	background-color: #ccc;
 }
 
 .result {
@@ -72,4 +80,12 @@
 	margin-top: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+button:hover {
+	background-color: #ddd;
+}
+
+button:active {
+	background-color: #ccc;
 }
