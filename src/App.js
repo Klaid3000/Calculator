@@ -8,6 +8,7 @@ function App() {
 	const actionPlus = '+';
 	const actionMinus = '-';
 	const numberButtons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+	const [displayColor, setDisplayColor] = useState(false);
 
 	const num1Change = (e) => {
 		//console.log(e);
@@ -35,7 +36,7 @@ function App() {
 			setResult('');
 		} else {
 			if (num1 === '') {
-				setNum1(number.toString());
+				setNum1(num1 + number.toString());
 			} else if (num2 === '') {
 				setNum2(number.toString());
 			}
@@ -43,19 +44,23 @@ function App() {
 	};
 
 	const actionSymbolPlus = () => {
-		if (num1 === '' && num2 === '') {
+		if (num1 === '' || num2 === '') {
 			setResult('Введите числа для сложения!');
 		} else {
 			setResult(`${num1} ${actionPlus} ${num2}`);
 		}
+
+		setDisplayColor(false);
 	};
 
 	const actionSymbolMinus = () => {
-		if (num1 === '' && num2 === '') {
+		if (num1 === '' || num2 === '') {
 			setResult('Введите числа для вычетания!');
 		} else {
 			setResult(`${num1} ${actionMinus} ${num2}`);
 		}
+
+		setDisplayColor(false);
 	};
 
 	const calculateResult = () => {
@@ -72,12 +77,15 @@ function App() {
 		} else {
 			setResult('Введите числа для подсчета или выберите операцию!');
 		}
+
+		setDisplayColor(true);
 	};
 
 	const clear = () => {
 		setNum1('');
 		setNum2('');
 		setResult('');
+		setDisplayColor(false);
 	};
 
 	return (
@@ -135,7 +143,9 @@ function App() {
 					</div>
 					<div className={styles.result}>
 						Result:
-						<p>{result}</p>
+						<p className={displayColor ? styles.resultColor : null}>
+							{result}
+						</p>
 					</div>
 				</header>
 			</div>

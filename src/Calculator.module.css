@@ -50,6 +50,7 @@
 
 .buttons {
 	display: inline-block;
+	width: 350px;
 }
 
 .buttonResult {
@@ -80,6 +81,10 @@
 	margin-top: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.resultColor {
+	color: red;
 }
 
 button:hover {
