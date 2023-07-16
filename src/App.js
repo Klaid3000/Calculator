@@ -36,7 +36,7 @@ function App() {
 			setResult('');
 		} else {
 			if (num1 === '') {
-				setNum1(num1 + number.toString());
+				setNum1(number.toString());
 			} else if (num2 === '') {
 				setNum2(number.toString());
 			}
